@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+}
+header {
+    background-color: #FF5A5F;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+nav {
+    display: flex;
+    gap: 1rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner Styles */
+.banner {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #FF5A5F, #F1C40F);
+    color: white;
+}
+.banner h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.banner button {
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.close-btn {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FF5A5F;
+}
+
+/* Carousel Styles */
+.carousel {
+    padding: 1rem;
+}
+.carousel h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.carousel-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.thumbnail {
+    flex: 0 0 200px;
+    height: 150px;
+    background-color: #F1C40F;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.thumbnail:hover {
+    transform: scale(1.1);
+    background-color: #FF5A5F;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FF5A5F;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
